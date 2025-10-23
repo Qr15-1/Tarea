@@ -1,0 +1,59 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #000000;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.user-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  gap: 2rem;
+}
+
+#userName {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.logout-btn {
+  background: white;
+  color: black;
+  border: none;
+  outline: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #ff0000;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(255,0,0,0.4);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+}
+

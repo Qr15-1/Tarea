@@ -1,0 +1,22 @@
+---
+// src/pages/inicio.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Ciwok - Inicio">
+  <link slot="head" rel="stylesheet" href="/src/styles/inicio.css">
+
+  <header class="user-header">
+    <h2 id="userName">Cargando...</h2>
+    <button id="logoutBtn" class="logout-btn">Cerrar sesión</button>
+  </header>
+
+  <main class="content">
+    <h1>Hello</h1>
+  </main>
+
+  <script>
+    import '../scripts/inicio.js';
+  </script>
+</BaseLayout>
+

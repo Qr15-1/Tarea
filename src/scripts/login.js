@@ -7,10 +7,9 @@ loginBtn.addEventListener('click', async () => {
   try {
     const result = await signInWithPopup(auth, googleProvider);
     const user = result.user;
-    alert(`¡Bienvenido ${user.displayName}!`);
-    console.log('Usuario:', user);
-    // Aquí puedes redirigir a otra página
-    // window.location.href = '/dashboard';
+    console.log('Usuario autenticado:', user);
+    // Redirigir a la página de inicio
+    window.location.href = '/inicio';
   } catch (error) {
     console.error('Error al iniciar sesión:', error);
     alert('Error al iniciar sesión: ' + error.message);
