@@ -9,6 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.15.1"
+    "astro": "^5.15.1",
+    "firebase": "^12.4.0"
+  },
+  "devDependencies": {
+    "@vite-pwa/astro": "^1.1.1"
   }
 }

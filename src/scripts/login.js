@@ -1,0 +1,18 @@
+import { signInWithPopup } from 'firebase/auth';
+import { auth, googleProvider } from '../firebase.config.js';
+
+const loginBtn = document.getElementById('googleLoginBtn');
+
+loginBtn.addEventListener('click', async () => {
+  try {
+    const result = await signInWithPopup(auth, googleProvider);
+    const user = result.user;
+    alert(`¡Bienvenido ${user.displayName}!`);
+    console.log('Usuario:', user);
+    // Aquí puedes redirigir a otra página
+    // window.location.href = '/dashboard';
+  } catch (error) {
+    console.error('Error al iniciar sesión:', error);
+    alert('Error al iniciar sesión: ' + error.message);
+  }
+});
