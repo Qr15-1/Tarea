@@ -57,3 +57,24 @@ body {
   text-align: center;
 }
 
+/* Estilos para móvil */
+@media (max-width: 768px) {
+  .user-header {
+    padding: 1rem 1rem;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  #userName {
+    font-size: 1rem;
+  }
+
+  .logout-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+}
