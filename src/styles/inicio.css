@@ -62,13 +62,11 @@ body {
   .user-header {
     padding: 1rem 0.75rem;
     gap: 1rem;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
   #userName {
     font-size: 1rem;
-    padding-left: 0;
-    margin-left: 0;
   }
 
   .logout-btn {
