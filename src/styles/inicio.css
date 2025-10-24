@@ -60,13 +60,15 @@ body {
 /* Estilos para móvil */
 @media (max-width: 768px) {
   .user-header {
-    padding: 1rem 1rem;
+    padding: 1rem 0.75rem;
     gap: 1rem;
     justify-content: space-between;
   }
 
   #userName {
     font-size: 1rem;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   .logout-btn {
